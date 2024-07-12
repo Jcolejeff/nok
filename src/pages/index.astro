@@ -101,39 +101,11 @@ const images = [
 		<LandingPageHero client:load />
 	</section>
 
-	<section class="w-full scroll-mt-[-20rem] bg-primary-1" id="features">
-		<section
-			class="container relative w-full max-w-[1700px] overflow-x-hidden px-container-base py-[3rem] text-white md:pb-[4rem] lg:px-container-lg lg:py-[3rem] lg:pb-[6rem] xl:px-container-xl xxl:py-[9rem]"
-		>
-			<Features client:only />
-		</section>
-	</section>
 	<section class="w-full scroll-mt-28 bg-primary-2" id="download">
 		<!-- info grid icon cards sections -->
 		<section
-			class="container relative grid w-full max-w-[1700px] gap-[5rem] rounded-lg px-container-base py-[3rem] pb-20 md:grid-cols-[1fr_1fr] md:py-[5rem] md:pb-[7.25rem] md:pt-[6rem] lg:px-container-lg xl:px-container-xl"
+			class="container relative grid w-full max-w-[1700px] gap-[5rem] rounded-lg px-container-base py-[3rem] pb-20 md:py-[5rem] md:pb-[7.25rem] md:pt-[6rem] lg:px-container-lg xl:px-container-xl"
 		>
-			<div class="flex w-full flex-col">
-				<h4
-					class="mb-[6rem] text-[1.3rem] font-[700] tracking-[0.0125rem] text-secondary-2 lg:text-[1.8rem] lg:leading-[2.5rem] xxl:max-w-[70%]"
-				>
-					<TextFormat
-						text={"Achieve on time delivery of multiple projects without stretching your company finances."}
-						keyword={"company finances."}
-						keywordClassName="text-primary-1 transition-all duration-500 ease-in-out"
-					/>
-				</h4>
-
-				<img src={url("/images/receipts/needs.png")} alt="" class="w-full" />
-				<a
-					href="#"
-					class="mt-10 flex w-6/12 cursor-pointer items-center justify-center rounded-md bg-primary-1 px-4 py-4 text-white shadow-1 transition-opacity duration-300 ease-in-out hover:opacity-90 active:opacity-100 md:hidden md:w-fit"
-				>
-					<span class="font-[500] leading-[1.5rem] tracking-[0.02875rem] text-white">
-						Sign up for free
-					</span>
-				</a>
-			</div>
 			<InfoGrid client:only />
 		</section>
 	</section>
@@ -166,105 +138,11 @@ const images = [
 			</div>
 		</section>
 	</section>
-	<section class="w-full overflow-hidden bg-primary-2">
+	<section class="w-full scroll-mt-[-20rem] bg-primary-1" id="features">
 		<section
-			class="container relative mt-12 w-full max-w-[1700px] space-y-8 px-container-base pb-12 md:pb-20 lg:space-y-[5rem] lg:px-container-lg xl:px-container-xl"
+			class="container relative w-full max-w-[1700px] overflow-x-hidden px-container-base py-[3rem] text-white md:pb-[4rem] lg:px-container-lg lg:py-[3rem] lg:pb-[6rem] xl:px-container-xl xxl:py-[9rem]"
 		>
-			<div class="relative flex w-full flex-col justify-center gap-[2.5rem] md:gap-[2.75rem]">
-				<div class="flex flex-col items-center justify-center gap-6 2xl:gap-8">
-					<h4
-						class="text-center text-[1.3rem] font-[700] leading-[130%] tracking-[0.02rem] transition-all duration-500 ease-in-out md:max-w-[90rem] md:leading-[4rem] md:tracking-[0.0225rem] lg:ml-[-0.2rem] lg:text-[2.3rem] xxl:text-[2.7rem]"
-					>
-						<TextFormat
-							text={`How it works for Suppliers`}
-							keyword={"Suppliers"}
-							keywordClassName="text-primary-1  transition-all duration-500 ease-in-out"
-						/>
-					</h4>
-				</div>
-			</div>
-			<section
-				class="mx-auto grid w-full gap-[3rem] rounded-lg pb-20 md:grid-cols-[1fr_1fr] lg:max-w-[70%]"
-			>
-				{
-					sections.map((item, index) => {
-						return (
-							<>
-								<article class="flex  items-center gap-4 rounded-2xl border-[1px]  px-5 py-8  shadow-md xxl:gap-12 xxl:py-12">
-									<div class="flex flex-col gap-2 px-2  xxl:gap-4">
-										<img src={url(item.img)} alt="" class="w-12 xl:w-12" />
-										<h3 class="font-semibold md:text-base xl:text-lg">
-											<span>{index + 1 < 10 ? `0${index + 1}` : index + 1}.</span>{" "}
-											{item.heading}
-										</h3>
-										<p class="text-[0.8rem] text-sm leading-[130%] tracking-[0.02rem] md:leading-[2rem] md:tracking-[0.0225rem] xl:text-base">
-											{item.paragraph}
-										</p>
-									</div>
-								</article>
-							</>
-						);
-					})
-				}
-			</section>
+			<Features client:only />
 		</section>
-	</section>
-
-	<!-- test animaions -->
-	<section class="w-full scroll-mt-28 bg-primary-1" id="download">
-		<section
-			class="container relative w-full max-w-[1700px] overflow-x-hidden px-container-base py-[4rem] text-white md:py-[10rem] lg:px-container-lg xl:px-container-xl"
-		>
-			<InfoAboutCompany client:only />
-		</section>
-	</section>
-
-	<!-- test animaions -->
-	<section class="w-full scroll-mt-28 bg-primary-1" id="download">
-		<section
-			class="container relative w-full max-w-[1700px] overflow-x-hidden px-container-base py-[4rem] text-white md:py-[10rem] lg:px-container-lg xl:px-container-xl"
-		>
-			<HowToSections client:only />
-		</section>
-	</section>
-
-	<section class="w-full scroll-mt-28 bg-primary-1" id="download">
-		<section
-			class="container relative w-full max-w-[1700px] overflow-x-hidden px-container-base py-[4rem] md:py-[10rem] lg:px-container-lg xl:px-container-xl"
-		>
-			<div class="flex w-full flex-col items-center gap-10">
-				<div class="">
-					<h2
-						class="max-w-[90rem] text-center text-[2rem] font-[600] leading-[130%] tracking-[0.02rem] text-white transition-all duration-500 ease-in-out md:text-[2.6rem] md:tracking-[0.0225rem] lg:text-[3.4rem] xxl:text-[4rem] xxl:leading-[5rem]"
-					>
-						<TextFormat
-							text={`Enables your construction business grow without worrying about capital`}
-							keyword={"capital"}
-							keywordClassName="text-secondary-1 transition-all duration-500 ease-in-out"
-						/>
-					</h2>
-				</div>
-
-				<div
-					class="flex items-center gap-4 transition-all duration-500 ease-in-out md:w-1/2 md:justify-center"
-				>
-					<a href="#" class="">
-						<div
-							class="flex items-center justify-center rounded-lg bg-white px-4 py-3 md:px-6 md:py-4"
-						>
-							<p class="text-sm font-bold tracking-wider text-primary-1 md:text-lg">
-								Get started with nok
-							</p>
-						</div>
-					</a>
-				</div>
-			</div>
-		</section>
-	</section>
-	<section
-		id="contact"
-		class="container relative w-full max-w-[1700px] scroll-mt-[1rem] rounded-lg px-container-base py-[3rem] pb-20 md:py-[10rem] lg:px-container-lg xl:px-container-xl"
-	>
-		<GetStarted client:only />
 	</section>
 </Layout>

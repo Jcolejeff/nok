@@ -53,7 +53,7 @@ module.exports = {
             current: "currentColor",
             white: "#ffffff",
             primary: {
-               1: "#024EB5",
+               1: "#000",
                2: "#F8FAFC",
                3: "#6062E8",
                4: "#5456CC",
