@@ -100,8 +100,8 @@ const PAGE_TITLE = title != null && title?.length > 0 ? title : "NOK - ";
 	<body class="font-lora h-[100vh] w-screen overflow-hidden">
 		<div class="relative h-full w-full overflow-x-hidden scroll-smooth">
 			{
-				withNav && (
-					<section class={`fixed left-0 top-0 z-[200] w-full bg-primary-2 shadow-sm`}>
+				(
+					<section class={`fixed left-0 top-0 z-[200] w-full bg-primary-1 bg-transparent `}>
 						<Nav darkNavBg={!darkNavBg} />
 					</section>
 				)
