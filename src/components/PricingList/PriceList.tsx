@@ -27,20 +27,20 @@ const PriceList = () => {
          title: "Business",
          price: prices[index].prices[0],
          for: "Ideal for growing businesses that need more customers",
-         features: ["Customizable nok", "Basic Support", "One Integration", "Email support"],
+         features: ["Customizable NOK", "Basic Support", "One Integration", "Email support"],
       },
       {
          title: "Business Pro",
          price: prices[index].prices[1],
          for: "For large organization with specific needs",
-         features: ["Customizable nok", "Priority support", "Three Integration", "Email support"],
+         features: ["Customizable NOK", "Priority support", "Three Integration", "Email support"],
       },
       {
          title: "Business Max",
          price: prices[index].prices[2],
          for: "For large organization with specific needs",
          features: [
-            "Customizable nok",
+            "Customizable NOK",
             "Priority support",
             "One Integration",
             "Email support",

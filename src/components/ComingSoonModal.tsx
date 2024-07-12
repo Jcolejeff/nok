@@ -53,7 +53,7 @@ const ComingSoonModal = () => {
       defaultValues: {
          user_email: "",
          message:
-            "Hi,i just signed up to join the nok when you launch!, please notify me when you launch",
+            "Hi,i just signed up to join the NOK when you launch!, please notify me when you launch",
       },
    });
 
@@ -215,7 +215,7 @@ const ComingSoonModal = () => {
                      </form>
                   </Form>
                   <a
-                     href="mailto:support@getnok.co"
+                     href="mailto:support@getNOK.co"
                      className="text-center font-semibold text-primary-1 underline md:text-lg"
                   >
                      Or Contact Us

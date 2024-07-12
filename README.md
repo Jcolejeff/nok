@@ -1,7 +1,7 @@
-# nok landing
+# NOK landing
 
 ```
-landing page for the nok platform
+landing page for the NOK platform
 ```
 
 ## 🚀 Project Structure

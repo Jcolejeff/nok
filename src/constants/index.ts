@@ -58,7 +58,7 @@ const experiences = [
       ],
    },
    {
-      title: "Empower Your Business Planning on Your Terms with nok in Your Arsenal",
+      title: "Empower Your Business Planning on Your Terms with NOK in Your Arsenal",
       company_name: "Street Bazaar",
       icon: "/images/landing-page/zcomb.svg",
       iconBg: "#E6DEDD",

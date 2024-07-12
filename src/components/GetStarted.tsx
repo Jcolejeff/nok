@@ -134,7 +134,7 @@ const GetStartedForm = () => {
                </h3>
 
                <h4 className="max-w-[38.875rem] text-center text-[0.8rem] font-[500] leading-[2.2rem] text-secondary-2 md:text-[1rem] md:leading-[2rem] xxl:max-w-[45.875rem]  xxl:text-[1.3rem]">
-                  Join nok Today!
+                  Join NOK Today!
                </h4>
             </div>
 

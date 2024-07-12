@@ -10,13 +10,13 @@ const InfoGrid = () => {
    const data = [
       {
          image: "/images/receipts/iconOne.svg",
-         heading: "Connect with main contractors on nok",
+         heading: "Connect with main contractors on NOK",
          paragraph:
-            "Start by linking with your main contractor on nok and get your project rolling!.",
+            "Start by linking with your main contractor on NOK and get your project rolling!.",
       },
       {
          image: "/images/receipts/iconTwo.svg",
-         heading: "Upload your project details to the nok platform",
+         heading: "Upload your project details to the NOK platform",
          paragraph:
             "Easily upload your project agreement and material requirements for swift approval.",
       },

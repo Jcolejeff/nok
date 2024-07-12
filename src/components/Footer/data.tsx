@@ -11,15 +11,6 @@ export const FooterLinksData = [
                title: "About Us",
                url: "/about-us",
             },
-
-            {
-               title: "Privacy Policy",
-               url: "/privacy",
-            },
-            {
-               title: "Terms and Conditions",
-               url: "/terms",
-            },
          ],
       },
       render: null,
@@ -31,20 +22,20 @@ export const FooterLinksData = [
       body: "",
       collection: "footerLinks",
       data: {
-         category: "Products",
+         category: "Services",
          links: [
             {
-               title: "Material Financing",
+               title: "3D Animation",
                url: "#",
                soon: false,
             },
             {
-               title: "Advance Pay",
+               title: "Product Visualization",
                url: "#",
                soon: true,
             },
             {
-               title: "Invoice discounting",
+               title: "VFX",
                url: "#",
                soon: true,
             },
@@ -70,8 +61,8 @@ export const FooterLinksData = [
             //    url: "#faq",
             // },
             {
-               title: "support@getnok.co",
-               url: "mailto:support@getnok.co",
+               title: "support@nokstudio.com",
+               url: "mailto:support@nokstudios.com",
             },
          ],
       },

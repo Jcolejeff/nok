@@ -21,7 +21,8 @@ module.exports = {
          poppins: ["Poppins", "sans-serif"],
          inter: ["Inter", "sans-serif"],
          quicksand: ["Quicksand", "sans-serif"],
-
+         lora: ["Lora", "serif"],
+         ubuntu: ["Ubuntu", "sans-serif"],
          DmSans: ["DM Sans", "sans-serif"],
       },
       container: {
