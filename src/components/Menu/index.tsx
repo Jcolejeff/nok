@@ -51,26 +51,39 @@ const Menu = () => {
                <DropdownMenuSeparator />
                <DropdownMenuGroup>
                   <DropdownMenuItem>
-                     Profile
-                     <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
+                     <a href="/about-us"> About Us</a>
+                     <DropdownMenuShortcut></DropdownMenuShortcut>
                   </DropdownMenuItem>
+               </DropdownMenuGroup>
+               <DropdownMenuSeparator />
+
+               <DropdownMenuGroup>
+                  <DropdownMenuSub>
+                     <DropdownMenuSubTrigger>Services</DropdownMenuSubTrigger>
+                     <DropdownMenuPortal>
+                        <DropdownMenuSubContent>
+                           <DropdownMenuItem>
+                              <a href="/about-us">3D Animation</a>
+                           </DropdownMenuItem>
+                           <DropdownMenuItem>
+                              <a href="/about-us">Product Visualization</a>
+                           </DropdownMenuItem>
+                           <DropdownMenuItem>
+                              <a href="/about-us">VFX</a>
+                           </DropdownMenuItem>
+                           <DropdownMenuItem>
+                              <a href="/about-us">Game Development</a>
+                           </DropdownMenuItem>
+                        </DropdownMenuSubContent>
+                     </DropdownMenuPortal>
+                  </DropdownMenuSub>
                </DropdownMenuGroup>
                <DropdownMenuSeparator />
                <DropdownMenuGroup>
-                  <DropdownMenuItem>Team</DropdownMenuItem>
-
                   <DropdownMenuItem>
-                     New Team
-                     <DropdownMenuShortcut>⌘+T</DropdownMenuShortcut>
+                     <a href="/contact-us">Contact Us</a>
                   </DropdownMenuItem>
                </DropdownMenuGroup>
-               <DropdownMenuSeparator />
-               <DropdownMenuItem>Support</DropdownMenuItem>
-               <DropdownMenuSeparator />
-               <DropdownMenuItem>
-                  Log out
-                  <DropdownMenuShortcut>⇧⌘Q</DropdownMenuShortcut>
-               </DropdownMenuItem>
             </DropdownMenuContent>
          </DropdownMenu>
       </>

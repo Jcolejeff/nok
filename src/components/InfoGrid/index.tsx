@@ -5,36 +5,60 @@ import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../../utils/motion";
 import { SectionWrapper } from "../../hoc";
 import TextFormat from "lib/helpers/TextFormat";
+import Fade from "react-reveal/Fade";
+import { sub } from "date-fns";
 
 const InfoGrid = () => {
    const data = [
       {
-         image: "/images/receipts/iconOne.svg",
-         heading: "Connect with main contractors on NOK",
+         images: [
+            "/images/services/ani.png",
+            "/images/services/ani_1.png",
+            "/images/services/ani_2.png",
+         ],
+         heading: "3D ANIMATION",
+         subHeading: "NEED ANIMATION SERVICES?",
+         link: "/services/3d-animation",
          paragraph:
-            "Start by linking with your main contractor on NOK and get your project rolling!.",
+            "We offer quality and affordable 3D animation services for game cinematics, advertisement and more",
       },
       {
-         image: "/images/receipts/iconTwo.svg",
-         heading: "Upload your project details to the NOK platform",
+         images: [
+            "/images/services/pv.png",
+            "/images/services/pv_1.png",
+            "/images/services/pv_2.png",
+         ],
+         heading: "PRODUCT VISUALIZATION",
+         subHeading: "OUR PRODUCT VISUALIZATION ARE TOPNOTCH!!!",
+         link: "/services/3d-animation",
          paragraph:
-            "Easily upload your project agreement and material requirements for swift approval.",
+            "We bring VFX level CGI to our product visualization, making your products look eye catching with the best visual fidelity. ",
+      },
+
+      {
+         images: ["/images/services/v.png", "/images/services/v_1.png", "/images/services/v_2.png"],
+         heading: "VFX",
+         subHeading: "OUR PRODUCT VISUALIZATION ARE TOP NOTCH!!!",
+         link: "/services/3d-animation",
+         paragraph:
+            "We bring VFX level CGI to our product visualization, making your products look eye catching with the best visual fidelity. ",
       },
       {
-         image: "/images/receipts/icon.svg",
-         heading: "Get your materials financed",
+         images: [
+            "/images/services/gd.png",
+            "/images/services/gd_1.png",
+            "/images/services/gd_2.png",
+         ],
+         heading: "GAME DEVELOPMENT",
+         subHeading: "WE CREATE AMAZING IMMERSIVE EXPERIENCES",
+         link: "/services/3d-animation",
          paragraph:
-            "Receive direct financing for your materials, ensuring no delays in your project.",
-      },
-      {
-         image: "/images/receipts/icon.svg",
-         heading: "Simple Fee",
-         paragraph: "Pay a simple fee on the financed amount, with no hidden charges.",
+            "At Nok Animation Studios, we develop immersive interactive experiences for different platforms such as mobile, pc, ps, xbox and VR. Check out some of our released titles as well as our works in progress.  ",
       },
    ];
    return (
       <div>
-         <motion.div variants={textVariant(0)}>
+         <Fade bottom>
             <div className="flex h-full flex-col items-center justify-center gap-6 2xl:gap-8">
                <h5 className="text-center text-[1.6rem] font-[700] leading-[130%] tracking-[0.02rem]  transition-all duration-500 ease-in-out md:max-w-[80rem] md:text-[2.6rem] md:leading-[3rem] md:tracking-[0.0225rem] lg:ml-[-0.2rem] lg:text-[3rem]">
                   <TextFormat
@@ -45,22 +69,51 @@ const InfoGrid = () => {
                   />
                </h5>
             </div>
-         </motion.div>
+         </Fade>
 
-         <section className="grid gap-[3rem] rounded-lg md:mt-12 md:gap-[1rem]">
-            {data.map((item: any, index: number) => {
+         <section className="grid gap-[3rem] rounded-lg md:mt-12 md:gap-[4rem]">
+            {data.map((item, index: number) => {
                return (
-                  <motion.div variants={fadeIn("down", "spring", index * 1, 0.75)}>
-                     <article className="flex flex-col items-start justify-between gap-4 rounded-2xl border-[1px]  px-5 py-24  shadow-md xxl:gap-12 xxl:py-12">
-                        <img src={url(item.image)} alt="" className="w-12 xl:w-12" />
-                        <div className="flex flex-col gap-2 px-2  xxl:gap-4">
-                           <h3 className="font-semibold md:text-base ">{item.heading}</h3>
-                           <p className="text-[0.8rem] text-sm leading-[130%] tracking-[0.02rem] md:leading-[2rem] md:tracking-[0.0225rem]">
-                              {item.paragraph}
-                           </p>
+                  <article className="relative grid grid-cols-3   shadow-xl" key={index}>
+                     <motion.div variants={fadeIn("right", "spring", 0 * 0.6, 0.75)}>
+                        <div className="h-[30rem] rounded-xl ">
+                           <img
+                              src={url(item.images[0])}
+                              alt=""
+                              className="h-full w-full object-cover"
+                           />
                         </div>
-                     </article>
-                  </motion.div>
+                     </motion.div>
+                     <motion.div variants={fadeIn("down", "spring", 1 * 0.6, 0.75)}>
+                        <div className="h-[30rem] rounded-xl ">
+                           <img
+                              src={url(item.images[1])}
+                              alt=""
+                              className="h-full w-full object-cover"
+                           />
+                        </div>
+                     </motion.div>
+                     <motion.div variants={fadeIn("left", "spring", 1.8 * 0.6, 0.75)}>
+                        <div className="h-[30rem] rounded-xl ">
+                           <img
+                              src={url(item.images[2])}
+                              alt=""
+                              className="h-full w-full object-cover"
+                           />
+                        </div>
+                     </motion.div>
+                     <div className="absolute bottom-0 left-0 flex w-full flex-col gap-2 bg-black/60 p-8 text-white  xxl:gap-4">
+                        <h3 className="text-center text-2xl  font-semibold md:text-4xl ">
+                           {item.heading}
+                        </h3>
+                        <h5 className="mt-5 text-[1.16rem]  leading-[130%] tracking-[0.02rem]  md:tracking-[0.0225rem]">
+                           {item.subHeading}
+                        </h5>
+                        <p className="text-[1rem]  leading-[130%] tracking-[0.02rem] md:tracking-[0.0225rem]">
+                           {item.paragraph}
+                        </p>
+                     </div>
+                  </article>
                );
             })}
          </section>

@@ -10,26 +10,26 @@ import { SectionWrapper } from "../../hoc";
 const Features = () => {
    const sections = [
       {
-         heading: "Hassle-free Material Financing",
-         paragraph: "Quick and easy access to funds for your construction materials.",
-         img: " /images/landing-page/scale.svg",
+         heading: "Unmatched Animation Excellence",
+         paragraph: "Experience the pinnacle of animation with NOK Studio. We deliver top-quality.",
       },
       {
-         heading: "Grow Your Business",
-         paragraph: "Take on more projects with reliable financial support.",
-         img: " /images/landing-page/scale.svg",
+         heading: "Bring Your Vision to Life",
+         paragraph:
+            "Our state-of-the-art visual effects transform your creative ideas into breathtaking realities.",
       },
       {
-         heading: "B2B Payments Made Easy",
-         paragraph: "Pay your suppliers directly with NOK, no intermediaries.",
-         img: " /images/landing-page/scale.svg",
+         heading: "Collaborate with Industry Leaders",
+         paragraph:
+            "Partner with NOK Studio's expert team to achieve stunning and impactful results.",
       },
       {
-         heading: "Secure Transactions",
-         paragraph: "Safe and direct payments to suppliers, with no interference.",
-         img: " /images/landing-page/scale.svg",
+         heading: "Push Creative Boundaries",
+         paragraph:
+            "Unlock new dimensions of creativity with our cutting-edge animation and VFX solutions.",
       },
    ];
+
    const [index, setIndex] = React.useState(0);
    const [active, setActive] = React.useState(sections[index]);
 
