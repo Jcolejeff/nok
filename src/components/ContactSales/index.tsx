@@ -34,7 +34,7 @@ const ContactSales: React.FC<ContactSalesProps> = ({ email, phone }) => {
       },
    ];
    return (
-      <section className="container relative w-full max-w-[1700px] px-container-base lg:px-container-lg xl:px-container-xl">
+      <section className="container relative w-full max-w-[1700px] px-container-base text-white lg:px-container-lg xl:px-container-xl">
          <div className="mb-[2rem] flex flex-col items-center gap-4 ">
             <h2 className=" text-center text-3xl  font-black md:text-[3rem]  ">
                Chat with our amiable team
@@ -42,7 +42,7 @@ const ContactSales: React.FC<ContactSalesProps> = ({ email, phone }) => {
          </div>
          <div className="mt-16 grid gap-16 md:grid-cols-[1fr_2fr]">
             <section className=" space-y-3">
-               <p className="  text-base   md:text-xl  md:leading-10">
+               <p className="  text-base   md:text-lg  md:leading-10">
                   You can contact us by filling and submitting the form or email us directly at
                </p>
                <a

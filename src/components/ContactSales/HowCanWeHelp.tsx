@@ -143,7 +143,7 @@ function ContactUsForm({ businessType, title, subTitle, breadcrumb }: Iprops) {
    // }, [location?.country_calling_code, location?.currency]);
 
    return (
-      <div className=" flex w-full flex-col bg-slate-200/50 p-4 py-8 md:justify-self-end    md:rounded-[15px] md:px-12  md:py-6">
+      <div className=" flex w-full flex-col bg-slate-200/50 p-4 py-8 text-black md:justify-self-end    md:rounded-[15px] md:px-12  md:py-6">
          {/* <div className=" flex flex-col  mt-8 md:mt-10 gap-4 pb-[2rem] container px-container-xl lg:px-container-lg xl:px-container-xl overflow-x-hidden relative max-w-[1000px]    w-full  rounded-[15px]"> */}
          <Form {...form}>
             <form
@@ -160,12 +160,12 @@ function ContactUsForm({ businessType, title, subTitle, breadcrumb }: Iprops) {
                      render={({ field }) => (
                         <FormItem>
                            <div className="relative">
-                              <label className="mb-4 block   rounded-full  text-xl">
+                              <label className="mb-4 block rounded-full  text-xl  text-white">
                                  Full Name
                               </label>
                               <FormControl>
                                  <Input
-                                    className="bg-slate-50  py-8 text-lg  transition-all duration-200    ease-in-out placeholder:text-lg placeholder:text-gray-300 "
+                                    className="bg-slate-50  py-8 text-lg  transition-all duration-200    ease-in-out placeholder:text-lg placeholder:text-gray-600 "
                                     placeholder="Jane Doe"
                                     {...field}
                                  />
@@ -181,10 +181,12 @@ function ContactUsForm({ businessType, title, subTitle, breadcrumb }: Iprops) {
                      render={({ field }) => (
                         <FormItem>
                            <div className="relative">
-                              <label className="mb-4 block  rounded-full  text-xl">Email</label>
+                              <label className="mb-4 block rounded-full  text-xl  text-white">
+                                 Email
+                              </label>
                               <FormControl>
                                  <Input
-                                    className="bg-slate-50 py-8 text-lg  transition-all duration-200  ease-in-out placeholder:text-lg placeholder:text-gray-300"
+                                    className="bg-slate-50 py-8 text-lg  transition-all duration-200  ease-in-out placeholder:text-lg placeholder:text-gray-600"
                                     {...field}
                                     placeholder="youremail@gmail.com"
                                  />
@@ -260,11 +262,13 @@ function ContactUsForm({ businessType, title, subTitle, breadcrumb }: Iprops) {
                   name="message"
                   render={({ field }) => (
                      <FormItem>
-                        <label className="mb-4 block rounded-full  text-xl">Message</label>
+                        <label className="mb-4 block rounded-full  text-xl  text-white">
+                           Message
+                        </label>
                         <FormControl>
                            <Textarea
                               rows={8}
-                              className="mb-[2.5rem] resize-none bg-slate-50 px-[0.5rem] py-4 text-xl text-secondary-2 placeholder:text-lg placeholder:text-gray-300   placeholder:text-secondary-2/[0.38] focus-within:border-0    "
+                              className="mb-[2.5rem] resize-none bg-slate-50 px-[0.5rem] py-4 text-xl text-secondary-2 placeholder:text-lg placeholder:text-gray-600   placeholder:text-secondary-2/[0.38] focus-within:border-0    "
                               {...field}
                               placeholder="Write here..."
                            />
