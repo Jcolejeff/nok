@@ -8,7 +8,7 @@ export const FooterLinksData = [
          category: "Company",
          links: [
             {
-               title: "About Us",
+               title: "About The Studio",
                url: "/about-us",
             },
          ],
@@ -26,17 +26,22 @@ export const FooterLinksData = [
          links: [
             {
                title: "3D Animation",
-               url: "#",
+               url: "/3d-animation",
                soon: false,
             },
             {
                title: "Product Visualization",
-               url: "#",
+               url: "/product-visualization",
                soon: true,
             },
             {
                title: "VFX",
-               url: "#",
+               url: "/vfx",
+               soon: true,
+            },
+            {
+               title: "Game Development",
+               url: "/game-development",
                soon: true,
             },
          ],
@@ -56,13 +61,9 @@ export const FooterLinksData = [
                url: "/contact-us",
             },
 
-            // {
-            //    title: "FAQs",
-            //    url: "#faq",
-            // },
             {
-               title: "support@nokstudio.com",
-               url: "mailto:support@nokstudios.com",
+               title: "contact@nokanimationstudios.com",
+               url: "mailto:contact@nokanimationstudios.com",
             },
          ],
       },

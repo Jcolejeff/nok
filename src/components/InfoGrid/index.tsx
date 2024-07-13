@@ -75,7 +75,7 @@ const InfoGrid = () => {
             {data.map((item, index: number) => {
                return (
                   <article className="relative grid grid-cols-3   shadow-xl" key={index}>
-                     <motion.div variants={fadeIn("right", "spring", 0 * 0.6, 0.75)}>
+                     <motion.div variants={fadeIn("right", "spring", 0 * 0.4, 0.75)}>
                         <div className="h-[30rem] rounded-xl ">
                            <img
                               src={url(item.images[0])}
@@ -84,7 +84,7 @@ const InfoGrid = () => {
                            />
                         </div>
                      </motion.div>
-                     <motion.div variants={fadeIn("down", "spring", 1 * 0.6, 0.75)}>
+                     <motion.div variants={fadeIn("down", "spring", 1 * 0.4, 0.75)}>
                         <div className="h-[30rem] rounded-xl ">
                            <img
                               src={url(item.images[1])}
@@ -93,7 +93,7 @@ const InfoGrid = () => {
                            />
                         </div>
                      </motion.div>
-                     <motion.div variants={fadeIn("left", "spring", 1.8 * 0.6, 0.75)}>
+                     <motion.div variants={fadeIn("left", "spring", 1.8 * 0.5, 0.75)}>
                         <div className="h-[30rem] rounded-xl ">
                            <img
                               src={url(item.images[2])}

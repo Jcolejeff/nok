@@ -39,15 +39,15 @@ const Footer = ({}: IFooter) => {
                </div>
             ))}
          </div>
-         <div className=" flex flex-col-reverse justify-between gap-8 py-6 pt-9 md:flex-row md:gap-0">
+         <div className=" flex flex-col-reverse items-center justify-between gap-8 py-6 pt-9 md:flex-row md:gap-0">
             <p className="  font-semibold leading-[2rem] tracking-[0.00625rem]">
                Copyright © {new Date().getFullYear()} NOK ANIMATIONS STUDIOS All Rights Reserved
             </p>
             <div className="flex w-1/2   gap-8">
-               <img src={url("/images/footer/fb.svg")} alt="" />
-               <img src={url("/images/footer/insta.svg")} alt="" />
-               <img src={url("/images/footer/link.svg")} alt="" />
-               <img src={url("/images/footer/x.svg")} alt="" />
+               <img src={url("/images/footer/fb.svg")} alt="" className="md:w-16" />
+               <img src={url("/images/footer/insta.svg")} alt="" className="md:w-16" />
+               <img src={url("/images/footer/link.svg")} alt="" className="md:w-16" />
+               <img src={url("/images/footer/x.svg")} alt="" className="md:w-16" />
             </div>
          </div>
       </div>

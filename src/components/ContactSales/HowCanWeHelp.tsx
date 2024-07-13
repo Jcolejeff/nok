@@ -103,6 +103,7 @@ function ContactUsForm({ businessType, title, subTitle, breadcrumb }: Iprops) {
             progress: undefined,
             theme: "colored",
          });
+         form.reset();
       } catch (error: any) {
          setMessage({ text: error?.error, isError: true });
          toast.error("Error sending message, please try again", {

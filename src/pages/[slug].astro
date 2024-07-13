@@ -6,7 +6,7 @@ import TextFormat from "lib/helpers/TextFormat";
 
 import Layout from "layouts/Layout.astro";
 import { Circle } from "lucide-react";
-
+import Fade from "react-reveal/Fade";
 const resources = await getCollection("services");
 export async function getStaticPaths() {
 	const servicesList = await getCollection("services");
@@ -56,11 +56,13 @@ const resource = entry.data;
 			>
 				<TextFormat keywordClassName="text-primary-1" text={resource.title} keyword={"tool"} />
 			</h1>
-			<h2
-				class="text-[1.18rem] font-[700] leading-[2.5rem] text-opacity-[0.8] md:text-[2.1rem] md:leading-[3rem]"
-			>
-				{resource.subtitle}
-			</h2>
+			<Fade bottom client:only>
+				<h2
+					class="text-[1.18rem] font-[700] leading-[2.5rem] text-opacity-[0.8] md:text-[2.1rem] md:leading-[3rem]"
+				>
+					{resource.subtitle}
+				</h2>
+			</Fade>
 
 			<p
 				class="text-[1.18rem] font-[500] leading-[2.5rem] text-opacity-[0.8] md:max-w-[70%] md:text-[1.3rem] md:leading-[2.8rem] xxl:text-[1.3rem]"

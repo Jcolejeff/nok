@@ -11,8 +11,8 @@ const LandingPageHero = () => {
    const [index, setIndex] = useState(0);
 
    return (
-      <section className="container relative  h-[50vh] w-full  max-w-[1700px] px-container-base pt-[3rem] md:h-screen lg:px-container-lg lg:py-[8rem]  xl:px-container-xl  xxl:py-[5rem] xxl:pb-[8rem]">
-         <div className=" flex flex-col items-center justify-center  gap-6 2xl:gap-8">
+      <section className="container relative  h-[50vh] w-full  max-w-[1700px] px-container-base md:h-screen lg:px-container-lg  xl:px-container-xl  ">
+         <div className=" flex h-full flex-col items-center justify-center gap-6 2xl:gap-8">
             <div>
                <Fade bottom>
                   <img src={url("/images/logo.svg")} alt="" className=" object-contain " />

@@ -50,14 +50,22 @@ const Menu = () => {
                <DropdownMenuLabel>Navigation</DropdownMenuLabel>
                <DropdownMenuSeparator />
                <DropdownMenuGroup>
-                  <DropdownMenuItem>
+                  <DropdownMenuItem
+                     onClick={() => {
+                        window.location.href = "/";
+                     }}
+                  >
                      <a href="/"> Home</a>
                      <DropdownMenuShortcut></DropdownMenuShortcut>
                   </DropdownMenuItem>
                </DropdownMenuGroup>
                <DropdownMenuSeparator />
                <DropdownMenuGroup>
-                  <DropdownMenuItem>
+                  <DropdownMenuItem
+                     onClick={() => {
+                        window.location.href = "/about-us";
+                     }}
+                  >
                      <a href="/about-us"> About Us</a>
                      <DropdownMenuShortcut></DropdownMenuShortcut>
                   </DropdownMenuItem>
@@ -69,16 +77,32 @@ const Menu = () => {
                      <DropdownMenuSubTrigger>Services</DropdownMenuSubTrigger>
                      <DropdownMenuPortal>
                         <DropdownMenuSubContent>
-                           <DropdownMenuItem>
+                           <DropdownMenuItem
+                              onClick={() => {
+                                 window.location.href = "/3d-animation";
+                              }}
+                           >
                               <a href="/3d-animation">3D Animation</a>
                            </DropdownMenuItem>
-                           <DropdownMenuItem>
+                           <DropdownMenuItem
+                              onClick={() => {
+                                 window.location.href = "/product-visualization";
+                              }}
+                           >
                               <a href="/product-visualization">Product Visualization</a>
                            </DropdownMenuItem>
-                           <DropdownMenuItem>
+                           <DropdownMenuItem
+                              onClick={() => {
+                                 window.location.href = "/vfx";
+                              }}
+                           >
                               <a href="/vfx">VFX</a>
                            </DropdownMenuItem>
-                           <DropdownMenuItem>
+                           <DropdownMenuItem
+                              onClick={() => {
+                                 window.location.href = "/game-development";
+                              }}
+                           >
                               <a href="/game-development">Game Development</a>
                            </DropdownMenuItem>
                         </DropdownMenuSubContent>
@@ -87,7 +111,11 @@ const Menu = () => {
                </DropdownMenuGroup>
                <DropdownMenuSeparator />
                <DropdownMenuGroup>
-                  <DropdownMenuItem>
+                  <DropdownMenuItem
+                     onClick={() => {
+                        window.location.href = "/contact-us";
+                     }}
+                  >
                      <a href="/contact-us">Contact Us</a>
                   </DropdownMenuItem>
                </DropdownMenuGroup>

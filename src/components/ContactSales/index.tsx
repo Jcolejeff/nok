@@ -34,7 +34,7 @@ const ContactSales: React.FC<ContactSalesProps> = ({ email, phone }) => {
       },
    ];
    return (
-      <section className="container relative w-full max-w-[1700px] px-container-base text-white lg:px-container-lg xl:px-container-xl">
+      <section className="container relative mt-20 w-full max-w-[1700px] px-container-base text-white lg:px-container-lg xl:px-container-xl">
          <div className="mb-[2rem] flex flex-col items-center gap-4 ">
             <h2 className=" text-center text-3xl  font-black md:text-[3rem]  ">
                Chat with our amiable team
