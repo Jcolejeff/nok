@@ -39,26 +39,19 @@ const ContactSales: React.FC<ContactSalesProps> = ({ email, phone }) => {
             <h2 className=" text-center text-3xl  font-black md:text-[3rem]  ">
                Chat with our amiable team
             </h2>
-            <h3 className=" mb-16  text-center text-base   leading-7 opacity-[0.85] md:text-2xl">
-               We are here to help you. Please fill the form below or contact us
-            </h3>
          </div>
-         <div className="grid gap-16 md:grid-cols-1">
-            {/* <section className="grid gap-16 md:gap-8 md:grid-cols-[1fr_1fr] place-items-start  rounded-lg w-full">
-               {sections.map((item, index: number) => {
-                  return (
-                     <article className="flex flex-col     gap-4   rounded-lg" key={index}>
-                        <img src={url(item.img)} alt="" className="w-12" />
-
-                        <h3 className="font-semibold text-2xl">{item.heading}</h3>
-                        <p className="text-[1.3rem] leading-[130%] md:leading-[2rem] tracking-[0.02rem] md:tracking-[0.0225rem]">
-                           {item.paragraph}
-                        </p>
-                        <p className="font-semibold md:text-2xl">{item.info}</p>
-                     </article>
-                  );
-               })}
-            </section> */}
+         <div className="mt-16 grid gap-16 md:grid-cols-[1fr_2fr]">
+            <section className=" space-y-3">
+               <p className="  text-base   md:text-xl  md:leading-10">
+                  You can contact us by filling and submitting the form or email us directly at
+               </p>
+               <a
+                  className="mx-auto flex max-w-xl text-center text-[1rem] leading-[2.4rem] tracking-[0.0225rem] underline md:text-xl"
+                  href="mailto:contact@nokanimationstudios.com"
+               >
+                  contact@nokanimationstudios.com
+               </a>
+            </section>
             <ContactUsForm />
          </div>
       </section>
