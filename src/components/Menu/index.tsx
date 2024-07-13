@@ -46,8 +46,15 @@ const Menu = () => {
                   <img src={url("/svgs/menuIcon.svg")} alt="" />
                </Button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent className="w-[20rem]">
+            <DropdownMenuContent className="w-[10rem] md:w-[20rem]">
                <DropdownMenuLabel>Navigation</DropdownMenuLabel>
+               <DropdownMenuSeparator />
+               <DropdownMenuGroup>
+                  <DropdownMenuItem>
+                     <a href="/"> Home</a>
+                     <DropdownMenuShortcut></DropdownMenuShortcut>
+                  </DropdownMenuItem>
+               </DropdownMenuGroup>
                <DropdownMenuSeparator />
                <DropdownMenuGroup>
                   <DropdownMenuItem>
@@ -63,16 +70,16 @@ const Menu = () => {
                      <DropdownMenuPortal>
                         <DropdownMenuSubContent>
                            <DropdownMenuItem>
-                              <a href="/about-us">3D Animation</a>
+                              <a href="/3d-animation">3D Animation</a>
                            </DropdownMenuItem>
                            <DropdownMenuItem>
-                              <a href="/about-us">Product Visualization</a>
+                              <a href="/product-visualization">Product Visualization</a>
                            </DropdownMenuItem>
                            <DropdownMenuItem>
-                              <a href="/about-us">VFX</a>
+                              <a href="/vfx">VFX</a>
                            </DropdownMenuItem>
                            <DropdownMenuItem>
-                              <a href="/about-us">Game Development</a>
+                              <a href="/game-development">Game Development</a>
                            </DropdownMenuItem>
                         </DropdownMenuSubContent>
                      </DropdownMenuPortal>
