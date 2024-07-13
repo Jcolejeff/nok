@@ -1,0 +1,154 @@
+---
+import { CollectionEntry, getCollection } from "astro:content";
+import { cn, url } from "lib/utils";
+import TextFormat from "lib/helpers/TextFormat";
+import Layout from "layouts/Layout.astro";
+
+const posFeatures = [
+	{
+		heading: "Inventory Management:",
+		paragraph:
+			"One of the standout features of a POS application is its ability to manage inventory seamlessly. Businesses can track product levels in real-time, set up automatic reorder points, and receive alerts when stocks run low. This aids in optimizing supply chain management.",
+	},
+	{
+		heading: "Sales Analytics:",
+		paragraph:
+			"POS systems offer robust analytics tools that empower businesses to analyze sales data comprehensively. From tracking top-selling products to identifying customer buying patterns, these insights enable businesses to make informed decisions to enhance profitability.",
+	},
+	{
+		heading: "Customer Relationship Management (CRM):",
+		paragraph:
+			"POS applications often include CRM functionalities, allowing businesses to build and nurture relationships with their customers. This may involve loyalty programs, targeted promotions, and personalized communication, fostering customer loyalty and repeat business.",
+	},
+	{
+		heading: "Multi-Channel Integration:",
+		paragraph:
+			"In an era where businesses operate across various channels, a POS system shines by integrating seamlessly with e-commerce platforms and other sales channels. This ensures consistent data flow and a unified view of operations, regardless of the point of sale.",
+	},
+	{
+		heading: "Employee Management:",
+		paragraph:
+			"From clocking in and out to monitoring sales performance, a POS system simplifies employee management. It helps in tracking individual contributions, managing shifts, and ensuring transparency in payroll processes.",
+	},
+];
+const cashRegistrFeatures = [
+	{
+		heading: "Transaction Processing:",
+		paragraph:
+			"The fundamental purpose of a cash register app is to process transactions efficiently. It records sales, calculates totals, and provides a simple interface for cash handling.",
+	},
+	{
+		heading: "Basic Reporting:",
+		paragraph:
+			"Cash register apps typically offer basic reporting capabilities, allowing businesses to generate simple sales reports. However, the depth and granularity of these reports are limited compared to the robust analytics provided by POS systems.",
+	},
+	{
+		heading: "Ease of Use:",
+		paragraph:
+			"Simplicity is a key feature of cash register apps. They are user-friendly and do not have complex features for users to navigate. This makes them ideal for small businesses with straightforward transaction needs.",
+	},
+	{
+		heading: "Affordability:",
+		paragraph:
+			"In comparison to POS systems, cash register apps are often more affordable. This makes them an attractive option for small businesses with budget constraints, especially those not requiring the advanced features offered by POS systems.",
+	},
+	{
+		heading: "Durability:",
+		paragraph:
+			"Traditional cash registers are known for their durability. With mechanical components and a simple design, they can withstand the rigors of everyday use over an extended period.",
+	},
+];
+const posSystemSteps = [
+	{
+		number: 1,
+		heading: "Set Up the System:",
+		paragraph:
+			"Install the app on the designated devices, such as tablets or terminals. Input basic business information, including product catalog, pricing, and tax rates.",
+	},
+	{
+		number: 2,
+		heading: "Configuration and Product Entry:",
+		paragraph:
+			"Connect peripherals such as barcode scanners, receipt printers, and card readers to enhance functionality. Ensure that all hardware components are compatible with the app. Input products and their prices into the cash register app or use preset buttons. Assign numerical codes or use a barcode scanner if available.",
+	},
+	{
+		number: 3,
+		heading: "Employee Accounts:",
+		paragraph:
+			"Create individual accounts for employees with unique login credentials. Assign roles and permissions based on responsibilities.",
+	},
+	{
+		number: 4,
+		heading: "Process Sales:",
+		paragraph:
+			"Select items from the product catalog for quick input. Choose the payment method (cash, credit card, etc.) and complete the transaction. Provide customers with receipts, either digitally or as a printed copy.",
+	},
+	{
+		number: 5,
+		heading: "Inventory Management:",
+		paragraph:
+			"Update inventory levels automatically as sales are processed. Use the app to check stock levels, set reorder points, and manage product information.",
+	},
+	{
+		number: 6,
+		heading: "Sales Analytics:",
+		paragraph:
+			"Leverage analytics tools to track sales trends, monitor top-selling products, and analyze customer behavior. Utilize generated reports for strategic decision-making. Close out the cash register at the end of the business day. Reconcile sales, verify cash on hand, and generate a summary report.",
+	},
+	{
+		number: 7,
+		heading: "Customer Interaction:",
+		paragraph:
+			"Capture customer information during transactions to build a customer database. Generate basic sales reports from the cash register app. Review daily or periodic summaries of transactions. Implement loyalty programs or promotions through the app.",
+	},
+	{
+		number: 8,
+		heading: "Multi-Channel Integration:",
+		paragraph:
+			"Integrate the POS system or cash register with e-commerce platforms or other sales channels for a unified view of operations. Ensure consistency in inventory and sales data across all channels.",
+	},
+	{
+		number: 9,
+		heading: "Employee Management:",
+		paragraph:
+			"Use the app to monitor employee performance, track working hours, and manage shifts. Payroll processes based on the data collected become easier.",
+	},
+	{
+		number: 10,
+		heading: "Software Updates:",
+		paragraph:
+			"Regularly update the POS app to access new features, security patches, and improvements. Train employees on any new functionalities introduced through updates.",
+	},
+];
+---
+
+<Layout
+	darkNavBg
+	withoutWhatBusinessSay
+	title={`${"Top 10 POS Apps For Small Businesses 2024 (Free + Paid)"} - Timbu`}
+	withoutFAQ
+>
+	<main
+		class="container relative flex w-full max-w-[1700px] flex-col gap-16 overflow-x-hidden bg-white px-container-base py-8 md:py-24 lg:px-container-lg xl:px-container-xl"
+	>
+		<div class="my-[1.125rem] grid gap-[5rem] md:grid-cols-[3.5fr_1fr]">
+			<section class="flex flex-col gap-16 pb-8 md:pb-24">
+				<!-- desktop screen picture -->
+				<section class="space-y-5 text-center">
+					<h1
+						class="text-[1.3rem] font-[700] tracking-[0.0125rem] text-secondary-2 md:text-center md:text-[2.5rem] md:leading-[3.5rem]"
+					>
+						<TextFormat
+							keywordClassName="text-primary-1"
+							text={"Is There A Difference Between POS And Cash Registers?"}
+							keyword={"tool"}
+						/>
+					</h1>
+					<p class="text-sm md:text-lg">
+						6th Dec 2023 {"    "} | <span class="font-bold"> 10 min read</span>
+					</p>
+				</section>
+			</section>
+		</div>
+	</main>
+</Layout>
