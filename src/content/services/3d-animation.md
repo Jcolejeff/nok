@@ -24,5 +24,5 @@ imageSections:
    - image: /images/services/3d/img_3.png
      heading: Last Breadth
 
-link: https://play.google.com/store/apps/details?id=app.timbu.cashregister
+link: /3d-animation
 ---

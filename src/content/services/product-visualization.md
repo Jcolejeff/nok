@@ -21,5 +21,5 @@ imageSections:
    - image: /images/services/pv/pv_3.png
      heading: Last Airbender
 
-link: https://play.google.com/store/apps/details?id=app.timbu.cashregister
+link: /product-visualization
 ---

@@ -18,7 +18,7 @@ const InfoGrid = () => {
          ],
          heading: "3D ANIMATION",
          subHeading: "NEED ANIMATION SERVICES?",
-         link: "/services/3d-animation",
+         link: "/3d-animation",
          paragraph:
             "We offer quality and affordable 3D animation services for game cinematics, advertisement and more",
       },
@@ -30,7 +30,7 @@ const InfoGrid = () => {
          ],
          heading: "PRODUCT VISUALIZATION",
          subHeading: "OUR PRODUCT VISUALIZATION ARE TOPNOTCH!!!",
-         link: "/services/3d-animation",
+         link: "/product-visualization",
          paragraph:
             "We bring VFX level CGI to our product visualization, making your products look eye catching with the best visual fidelity. ",
       },
@@ -39,7 +39,7 @@ const InfoGrid = () => {
          images: ["/images/services/v.png", "/images/services/v_1.png", "/images/services/v_2.png"],
          heading: "VFX",
          subHeading: "OUR PRODUCT VISUALIZATION ARE TOP NOTCH!!!",
-         link: "/services/3d-animation",
+         link: "/vfx",
          paragraph:
             "We bring VFX level CGI to our product visualization, making your products look eye catching with the best visual fidelity. ",
       },
@@ -51,7 +51,7 @@ const InfoGrid = () => {
          ],
          heading: "GAME DEVELOPMENT",
          subHeading: "WE CREATE AMAZING IMMERSIVE EXPERIENCES",
-         link: "/services/3d-animation",
+         link: "/game-development",
          paragraph:
             "At Nok Animation Studios, we develop immersive interactive experiences for different platforms such as mobile, pc, ps, xbox and VR. Check out some of our released titles as well as our works in progress.  ",
       },
@@ -74,7 +74,7 @@ const InfoGrid = () => {
          <section className="grid gap-[3rem] rounded-lg md:mt-12 md:gap-[4rem]">
             {data.map((item, index: number) => {
                return (
-                  <article className="relative grid grid-cols-3   shadow-xl" key={index}>
+                  <a href={item.link} className="relative grid grid-cols-3   shadow-xl" key={index}>
                      <motion.div variants={fadeIn("right", "spring", 0 * 0.4, 0.75)}>
                         <div className="h-[30rem] rounded-xl ">
                            <img
@@ -113,7 +113,7 @@ const InfoGrid = () => {
                            {item.paragraph}
                         </p>
                      </div>
-                  </article>
+                  </a>
                );
             })}
          </section>

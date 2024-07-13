@@ -1,97 +1,14 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import tool from "components/LandingHero/data";
 import LandingPageHero from "components/LandingHero";
-import { cn, url } from "lib/utils";
 import Fade from "react-reveal/Fade";
 import TextFormat from "lib/helpers/TextFormat";
-import ComingSoonModal from "components/ComingSoonModal";
-import BusinessCard from "components/BusinessCard";
-import load from "astro-icon/lib/utils";
-import ReviewSide from "components/ReviewsSlide";
-
-// import InfoAboutCompany from "components/LandingPageSections/InfoAboutCompany.astro";
 import Features from "components/Features";
-import LogoMarquee from "components/LogosSlide";
-import ProductInfo from "components/ProductInfo";
-import InfoAboutCompany from "components/InfoAboutCompany";
-import HowToSections from "components/HowToSections";
-import Feedbacks from "components/Feedbacks";
-import InfoGrid from "components/InfoGrid";
-import GetStarted from "components/GetStarted";
-const data = [
-	{
-		image: "/images/receipts/iconOne.svg",
-		heading: "Digital Receipts",
-		paragraph:
-			"Go green with our digital receipts – a modern, eco-friendly solution for seamless transaction records.",
-	},
-	{
-		image: "/images/receipts/iconTwo.svg",
-		heading: "Paperless Tracking",
-		paragraph:
-			"Ditch the paper clutter. Easily track and manage your expenses with our efficient paperless receipt system.",
-	},
-	{
-		image: "/images/receipts/icon.svg",
-		heading: "Instant Confirmation",
-		paragraph:
-			"Receive instant confirmation of your transactions with our swift digital receipt system. No more waiting!.",
-	},
-	{
-		image: "/images/receipts/iconFour.svg",
-		heading: "Organized Records",
-		paragraph:
-			"Keep your financial records organized effortlessly. Our receipts make tracking and managing expenses a breeze.",
-	},
-];
-const sectionsTwo = [
-	{
-		heading: "Sign up to NOK",
-		paragraph: "Get a NOK profile instantly and connect your bank account.",
-		img: "/images/contact/support.svg",
-	},
-	{
-		heading: "Upload an invoice",
-		paragraph:
-			"Upload an invoice and we pay the supplier on your behalf. You can pay us back later.",
-		img: "/images/contact/support2.svg",
-	},
-	{
-		heading: "No interest",
-		paragraph: "Simple fee, only on what you use.No hidden charges.",
-		img: "/images/contact/support3.svg",
-	},
-];
 
-const sections = [
-	{
-		heading: "Get Paid upfront",
-		paragraph: "We offer easy and fast payment options to our suppliers.",
-		img: "/images/receipts/iconOne.svg",
-	},
-	{
-		heading: "Flexible payment options",
-		paragraph: "We enable you offer credit terms and flexible payment options to your customers.",
-		img: "/images/receipts/icon.svg",
-	},
-	// {
-	//    heading: "Integration partner network",
-	//    paragraph: "Are you having a problem integrating partner network? reach out to our experts",
-	//    img: "/images/contact/support3.svg",
-	// },
-];
-const images = [
-	"/images/pricing/buffer.svg",
-	"/images/pricing/stripe.svg",
-	"/images/pricing/netflix.svg",
-	"/images/pricing/dropbox.svg",
-	"/images/pricing/hub.svg",
-	"/images/pricing/framer.svg",
-];
+import InfoGrid from "components/InfoGrid";
 ---
 
-<Layout title="NOK">
+<Layout title="NOK Animation and Studios">
 	<section
 		class="w-full"
 		style={{

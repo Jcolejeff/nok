@@ -24,5 +24,5 @@ imageSections:
    - image: /images/services/vfx/v_3.png
      heading: Last Breadth
 
-link: https://play.google.com/store/apps/details?id=app.timbu.cashregister
+link: /vfx
 ---
