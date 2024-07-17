@@ -15,15 +15,21 @@ let { darkNavBg } = Astro.props;
 console.log(darkNavBg);
 ---
 
-<nav class="container max-w-[1700px] px-container-base lg:px-container-lg xl:px-container-xl">
+<nav
+	class="container max-w-[1700px] skew-x-[-40deg] px-container-base lg:px-container-lg xl:px-container-xl"
+>
 	<div
 		class="flex w-full items-center justify-between py-[1.2rem] md:py-[1.5rem] lg:border-b-secondary-1 xxl:py-8"
 	>
-		<div class={`flex w-full items-center gap-[1rem] ${darkNavBg ? "invisible" : "visible"}`}>
+		<div
+			class={`flex w-full items-center md:-ml-10 gap-[1rem] ${
+				darkNavBg ? "invisible" : "visible"
+			}`}
+		>
 			<a href="/" class="flex w-fit max-w-[1700px] items-center text-white">
-				<img src={url("/images/logo.svg")} alt="" class="-ml-6 w-24 object-cover lg:w-32" />
+				<img src={url("/images/logo.svg")} alt="" class="-ml-6 w-24 object-contain lg:w-36" />
 
-				<p class="-mb-3 text-xl text-white">Animation studios</p>
+				<p class="-mb-3 text-xl text-white md:text-2xl">Animation studios</p>
 			</a>
 		</div>
 

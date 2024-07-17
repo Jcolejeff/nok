@@ -104,7 +104,9 @@ const PAGE_TITLE = title != null && title?.length > 0 ? title : "NOK - ";
 			{
 				(
 					<section
-						class={`fixed left-0 top-0 z-[10] w-full  ${darkNavBg ? "bg-primary-1/50" : ""} `}
+						class={`fixed left-0 top-0 z-[10] w-full origin-top-left skew-x-[40deg]    ${
+							darkNavBg ? "bg-primary-1/50" : ""
+						} `}
 					>
 						<Nav darkNavBg={!darkNavBg} />
 					</section>
