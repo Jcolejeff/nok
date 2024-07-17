@@ -43,12 +43,10 @@ const Menu = () => {
             <DropdownMenuTrigger asChild>
                <Button variant="default">
                   {" "}
-                  <img src={url("/svgs/menuIcon.svg")} alt="" />
+                  <img src={url("/svgs/menuIcon.svg")} alt="" className="w-8" />
                </Button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent className="w-[10rem] md:w-[20rem]">
-               <DropdownMenuLabel>Navigation</DropdownMenuLabel>
-               <DropdownMenuSeparator />
+            <DropdownMenuContent className="w-[10rem] border-none bg-black/50 text-xl text-white md:w-[20rem]">
                <DropdownMenuGroup>
                   <DropdownMenuItem
                      onClick={() => {
@@ -59,24 +57,12 @@ const Menu = () => {
                      <DropdownMenuShortcut></DropdownMenuShortcut>
                   </DropdownMenuItem>
                </DropdownMenuGroup>
-               <DropdownMenuSeparator />
-               <DropdownMenuGroup>
-                  <DropdownMenuItem
-                     onClick={() => {
-                        window.location.href = "/about-us";
-                     }}
-                  >
-                     <a href="/about-us"> About Us</a>
-                     <DropdownMenuShortcut></DropdownMenuShortcut>
-                  </DropdownMenuItem>
-               </DropdownMenuGroup>
-               <DropdownMenuSeparator />
 
                <DropdownMenuGroup>
                   <DropdownMenuSub>
                      <DropdownMenuSubTrigger>Services</DropdownMenuSubTrigger>
                      <DropdownMenuPortal>
-                        <DropdownMenuSubContent>
+                        <DropdownMenuSubContent className="bg-black/50 text-white">
                            <DropdownMenuItem
                               onClick={() => {
                                  window.location.href = "/3d-animation";
@@ -109,7 +95,17 @@ const Menu = () => {
                      </DropdownMenuPortal>
                   </DropdownMenuSub>
                </DropdownMenuGroup>
-               <DropdownMenuSeparator />
+
+               <DropdownMenuGroup>
+                  <DropdownMenuItem
+                     onClick={() => {
+                        window.location.href = "/about-us";
+                     }}
+                  >
+                     <a href="/about-us"> About The Studio</a>
+                     <DropdownMenuShortcut></DropdownMenuShortcut>
+                  </DropdownMenuItem>
+               </DropdownMenuGroup>
                <DropdownMenuGroup>
                   <DropdownMenuItem
                      onClick={() => {
