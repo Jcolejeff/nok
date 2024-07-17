@@ -161,7 +161,7 @@ function ContactUsForm({ businessType, title, subTitle, breadcrumb }: Iprops) {
                      render={({ field }) => (
                         <FormItem>
                            <div className="relative">
-                              <label className="mb-4 block rounded-full  text-xl  text-white">
+                              <label className="mb-4 block rounded-full  text-xl  ">
                                  Full Name
                               </label>
                               <FormControl>
@@ -182,9 +182,7 @@ function ContactUsForm({ businessType, title, subTitle, breadcrumb }: Iprops) {
                      render={({ field }) => (
                         <FormItem>
                            <div className="relative">
-                              <label className="mb-4 block rounded-full  text-xl  text-white">
-                                 Email
-                              </label>
+                              <label className="mb-4 block rounded-full  text-xl  ">Email</label>
                               <FormControl>
                                  <Input
                                     className="bg-slate-50 py-8 text-lg  transition-all duration-200  ease-in-out placeholder:text-lg placeholder:text-gray-600"
@@ -226,14 +224,14 @@ function ContactUsForm({ businessType, title, subTitle, breadcrumb }: Iprops) {
                                        required: true,
                                     }}
                                     buttonStyle={{
-                                       background: "white",
+                                       backgrou",
                                        paddingInline: "0.1rem",
                                        border: "1px solid #e4e2e2",
                                        borderRight: "none",
                                        backgroundColor: "#f4f9fc",
                                     }}
                                     dropdownStyle={{ height: "300px", maxHeight: "300px" }}
-                                    dropdownClass="bg-white shadow-1"
+                                    dropdownClass shadow-1"
                                     searchStyle={{
                                        width: "80%",
                                        border: "1px solid #e4e2e2",
@@ -263,9 +261,7 @@ function ContactUsForm({ businessType, title, subTitle, breadcrumb }: Iprops) {
                   name="message"
                   render={({ field }) => (
                      <FormItem>
-                        <label className="mb-4 block rounded-full  text-xl  text-white">
-                           Message
-                        </label>
+                        <label className="mb-4 block rounded-full  text-xl  ">Message</label>
                         <FormControl>
                            <Textarea
                               rows={8}
@@ -285,7 +281,7 @@ function ContactUsForm({ businessType, title, subTitle, breadcrumb }: Iprops) {
                      type="submit"
                      className="group flex w-full items-center justify-center gap-2 rounded-[6px] bg-primary-1 px-6 py-4 transition-all duration-200 ease-in-out hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50"
                   >
-                     <span className="text-xl font-[500] leading-[1.5rem] tracking-[0.02875rem] text-white disabled:cursor-not-allowed disabled:opacity-50">
+                     <span className="text-xl font-[500] leading-[1.5rem] tracking-[0.02875rem]  text-white disabled:cursor-not-allowed disabled:opacity-50">
                         {formIsLoading ? <Spinner /> : "Send Us a Message"}
                      </span>
                   </button>

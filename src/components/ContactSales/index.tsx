@@ -34,11 +34,9 @@ const ContactSales: React.FC<ContactSalesProps> = ({ email, phone }) => {
       },
    ];
    return (
-      <section className="container relative mt-20 w-full max-w-[1700px] px-container-base text-white lg:px-container-lg xl:px-container-xl">
+      <section className="container relative my-20 w-full max-w-[1700px] px-container-base lg:px-container-lg xl:px-container-xl">
          <div className="mb-[2rem] flex flex-col items-center gap-4 ">
-            <h2 className=" text-center text-3xl  font-black md:text-[3rem]  ">
-               Chat with our amiable team
-            </h2>
+            <h2 className=" text-center text-3xl  font-black md:text-[3rem]  ">Contact Us</h2>
          </div>
          <div className="mt-16 grid gap-16 md:grid-cols-[1fr_2fr]">
             <section className=" space-y-3">
@@ -46,7 +44,7 @@ const ContactSales: React.FC<ContactSalesProps> = ({ email, phone }) => {
                   You can contact us by filling and submitting the form or email us directly at
                </p>
                <a
-                  className="mx-auto flex max-w-xl text-center text-[1rem] leading-[2.4rem] tracking-[0.0225rem] underline md:text-xl"
+                  className="mx-auto flex max-w-xl text-center text-[1rem] leading-[2.4rem] tracking-[0.0225rem] text-secondary-1 underline md:text-xl"
                   href="mailto:contact@nokanimationstudios.com"
                >
                   contact@nokanimationstudios.com

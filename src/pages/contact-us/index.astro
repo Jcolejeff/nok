@@ -7,19 +7,18 @@ import { url } from "lib/utils";
 import HowCanWeHelpSection from "components/ContactSales";
 ---
 
-<Layout title="Contact The Studio | NOK Animation and Studios">
-	<main class="flex w-full flex-col bg-primary-1">
+<Layout title="Contact The Studio | NOK Animation and Studios" darkNavBg>
+	<main class="">
+		<div
+			class="relative h-[400px] w-full bg-cover bg-center bg-no-repeat md:h-[80vh]"
+			style={{
+				background: `#F8FAFC url(${url(
+					"/images/contact/contact.png",
+				)}) no-repeat fixed center / cover`,
+			}}
+		>
+		</div>
 		<section class="">
-			<a
-				href="/"
-				class="container relative z-[1000] -ml-2 mt-8 flex w-fit max-w-[1700px] items-center px-container-base text-white lg:px-container-lg xl:px-container-xl"
-			>
-				<div class="flex items-center gap-2">
-					<img src={url("/images/logo.svg")} alt="" class="w-24 object-contain lg:w-32" />
-				</div>
-				<p class="-mb-2 text-xl text-white">Animation studios</p>
-			</a>
-
 			<HowCanWeHelpSection client:load />
 		</section>
 	</main>
