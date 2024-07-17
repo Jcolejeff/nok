@@ -41,12 +41,12 @@ const Menu = () => {
       <>
          <DropdownMenu>
             <DropdownMenuTrigger asChild>
-               <Button variant="default">
+               <button className="">
                   {" "}
                   <img src={url("/svgs/menuIcon.svg")} alt="" className="w-8" />
-               </Button>
+               </button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent className="w-[10rem] border-none bg-black/50 text-xl text-white md:w-[20rem]">
+            <DropdownMenuContent className="mt-6 w-[10rem] border-none bg-black/50 text-xl text-white md:w-[20rem]">
                <DropdownMenuGroup>
                   <DropdownMenuItem
                      onClick={() => {

@@ -103,7 +103,9 @@ const PAGE_TITLE = title != null && title?.length > 0 ? title : "NOK - ";
 		<div class="relative h-full w-full overflow-x-hidden scroll-smooth">
 			{
 				(
-					<section class={`fixed left-0 top-0 z-[10] w-full bg-primary-1  `}>
+					<section
+						class={`fixed left-0 top-0 z-[10] w-full  ${darkNavBg ? "bg-primary-1/50" : ""} `}
+					>
 						<Nav darkNavBg={!darkNavBg} />
 					</section>
 				)
