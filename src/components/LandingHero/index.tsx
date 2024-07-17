@@ -21,8 +21,8 @@ const LandingPageHero = () => {
             </div>
 
             <div className="mb-5 flex   items-center gap-4 transition-all duration-500 ease-in-out">
-               <div className="flex items-center justify-center rounded-lg bg-primary-1 px-4 py-3  xxl:px-4 xxl:py-4">
-                  <p className="text-sm  font-medium tracking-wider text-white lg:text-[1.9rem] xxl:text-[1.1rem]">
+               <div className="flex items-center justify-center rounded-lg  px-4 py-3  xxl:px-4 xxl:py-4">
+                  <p className="text-lg  font-medium tracking-wider text-white lg:text-[2.9rem]">
                      ANIMATION STUDIOS
                   </p>
                </div>
