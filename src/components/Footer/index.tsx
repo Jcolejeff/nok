@@ -49,14 +49,11 @@ const Footer = ({}: IFooter) => {
             <div className="flex items-center justify-between gap-4 pt-8">
                <a
                   href="/contact-us"
-                  className="text-secondary-23 text-[14px] tracking-[0.00625rem] underline"
+                  className="text-secondary-23 text-[14px] tracking-[0.00625rem] "
                >
                   <span className="">Contact Us</span>
                </a>
-               <a
-                  href="/about-us"
-                  className="text-secondary-23 text-[14px] tracking-[0.00625rem] underline"
-               >
+               <a href="/about-us" className="text-secondary-23 text-[14px] tracking-[0.00625rem] ">
                   <span className="">About the Studio</span>
                </a>
             </div>
