@@ -22,15 +22,24 @@ export interface Props {
 
 export const prerender = true;
 
-let { title, darkNavBg, withoutBottomNav, withoutFAQ, withoutWhatBusinessSay, withNav } =
-	Astro.props;
+let {
+	title,
+	darkNavBg,
+	withoutBottomNav,
+	withoutFAQ,
+	withoutWhatBusinessSay,
+	withNav,
+} = Astro.props;
 const PAGE_TITLE = title != null && title?.length > 0 ? title : "NOK - ";
 ---
 
 <!DOCTYPE html>
 <html lang="en" class="">
 	<head itemscope itemtype="http://schema.org/WebSite">
-		<meta name="title" content="NOK Studio - Premier Animation and VFX Solutions" />
+		<meta
+			name="title"
+			content="NOK Studio - Premier Animation and VFX Solutions"
+		/>
 
 		<meta
 			name="description"
@@ -68,7 +77,10 @@ const PAGE_TITLE = title != null && title?.length > 0 ? title : "NOK - ";
 
 		<meta itemprop="name" content="NOK" />
 		<meta itemprop="url" content="https://nok.com/" />
-		<meta property="og:title" content="NOK Studio - Premier Animation and VFX Solutions" />
+		<meta
+			property="og:title"
+			content="NOK Studio - Premier Animation and VFX Solutions"
+		/>
 		<meta
 			property="og:description"
 			content="NOK Studio empowers your creativity with top-notch 3D animation and visual effects. Achieve stunning results with efficiency, speed, and accuracy."
@@ -104,7 +116,7 @@ const PAGE_TITLE = title != null && title?.length > 0 ? title : "NOK - ";
 			{
 				(
 					<section
-						class={`fixed left-0 top-0 z-[10] w-full origin-top-left skew-x-[40deg]    ${
+						class={`fixed left-0 top-0 z-[10] px-4 md:px-0 w-full origin-top-left skew-x-[40deg]    ${
 							darkNavBg ? "bg-primary-1/50" : ""
 						} `}
 					>

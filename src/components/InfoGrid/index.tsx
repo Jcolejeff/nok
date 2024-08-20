@@ -8,13 +8,14 @@ import TextFormat from "lib/helpers/TextFormat";
 import Fade from "react-reveal/Fade";
 import { sub } from "date-fns";
 import { desktopData, mobileData } from "./data";
+import { ArrowRight } from "lucide-react";
 
 const InfoGrid = () => {
 	return (
 		<div>
 			<Fade bottom>
 				<div className="flex h-full flex-col items-center justify-center gap-6 2xl:gap-8">
-					<h5 className="text-center text-[1.6rem] font-[700] leading-[130%] tracking-[0.02rem]  transition-all duration-500 ease-in-out md:max-w-[80rem] md:text-[2.6rem] md:leading-[3rem] md:tracking-[0.0225rem] lg:ml-[-0.2rem] lg:text-[3rem]">
+					<h5 className="text-center text-[1.8rem] font-[700] leading-[130%] tracking-[0.02rem]  transition-all duration-500 ease-in-out md:max-w-[80rem] md:text-[2.6rem] md:leading-[3rem] md:tracking-[0.0225rem] lg:ml-[-0.2rem] lg:text-[3rem]">
 						<TextFormat
 							text={`Our Services`}
 							keyword={"Services"}
@@ -61,9 +62,12 @@ const InfoGrid = () => {
 								</div>
 							</motion.div>
 							<div className="absolute bottom-0 left-0 flex w-full flex-col gap-2 bg-black/60 p-8 text-white  xxl:gap-4">
-								<h3 className="text-center text-2xl  font-semibold md:text-4xl ">
-									{item.heading}
-								</h3>
+								<div className="flex gap-2 justify-center items-center">
+									<h3 className="text-center text-2xl  font-semibold md:text-4xl ">
+										{item.heading}
+									</h3>
+									<ArrowRight className="w-6 h-6  " />
+								</div>
 								<h5 className="mt-5 text-[1.16rem]  leading-[130%] tracking-[0.02rem]  md:tracking-[0.0225rem]">
 									{item.subHeading}
 								</h5>
@@ -94,10 +98,13 @@ const InfoGrid = () => {
 								</div>
 							</motion.div>
 
-							<div className="absolute bottom-0 left-0 flex w-full flex-col gap-2 bg-black/60 p-6 text-white  xxl:gap-4">
-								<h3 className="text-center text-xl  font-semibold md:text-4xl ">
-									{item.heading}
-								</h3>
+							<div className="absolute bottom-0 left-0 flex w-full flex-col gap-2 bg-black/70 p-6 text-white  xxl:gap-4">
+								<div className="flex gap-2 justify-center items-center">
+									<h3 className="text-center text-2xl  font-semibold md:text-4xl ">
+										{item.heading}
+									</h3>
+									<ArrowRight className="w-6 h-6 " />
+								</div>
 								<h5 className="mt-5 text-[1rem]  leading-[130%] tracking-[0.02rem]  md:tracking-[0.0225rem]">
 									{item.subHeading}
 								</h5>

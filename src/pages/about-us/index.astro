@@ -10,13 +10,13 @@ import TextFormat from "lib/helpers/TextFormat";
 			class="relative h-[400px] w-full bg-cover bg-center bg-no-repeat md:h-[80vh]"
 			style={{
 				background: `#F8FAFC url(${url(
-					"/images/about/about.png",
+					"/images/about/about.png"
 				)}) no-repeat fixed center / cover`,
 			}}
 		>
 		</div>
 		<section
-			class="container relative flex w-full max-w-[1700px] flex-col gap-6 overflow-x-hidden px-container-base pt-4 md:gap-[4rem] md:py-[2.5rem] md:pb-[6rem] lg:px-container-lg xl:px-container-xl"
+			class="container relative flex w-full max-w-[1700px] flex-col gap-6 overflow-x-hidden px-container-base py-12 md:gap-[4rem] md:py-[2.5rem] md:pb-[6rem] lg:px-container-lg xl:px-container-xl"
 		>
 			<h1
 				class="text-center text-[2rem] font-[600] leading-[130%] tracking-[0.02rem] transition-all duration-500 ease-in-out md:text-[3.4rem] md:leading-[5rem] md:tracking-[0.0225rem] lg:ml-[-0.2rem]"
@@ -29,9 +29,11 @@ import TextFormat from "lib/helpers/TextFormat";
 			</h1>
 
 			<div
-				class="relative flex w-full flex-col-reverse gap-[1.5rem] md:grid md:grid-cols-[1fr_1fr] md:gap-[2.75rem]"
+				class="relative flex w-full flex-col-reverse gap-[2.2rem] md:grid md:grid-cols-[1fr_1fr] md:gap-[2.75rem]"
 			>
-				<div class="flex flex-grow flex-col items-center justify-center gap-6 2xl:gap-6">
+				<div
+					class="flex flex-grow flex-col items-center justify-center gap-6 2xl:gap-6"
+				>
 					<p
 						class="w-fit rounded-full bg-primary-1/5 p-4 px-6 text-lg font-[900] md:p-4 md:px-8 md:text-2xl"
 					>
@@ -55,18 +57,23 @@ import TextFormat from "lib/helpers/TextFormat";
 						contact@nokanimationstudios.com</a
 					>
 				</div>
-				<div class="flex flex-grow flex-col items-center justify-center gap-6 2xl:gap-8">
+				<div
+					class="flex flex-grow flex-col items-center justify-center gap-6 2xl:gap-8"
+				>
 					<p
-						class="w-fit rounded-full bg-secondary-1/20 p-4 px-6 text-lg font-[900] text-secondary-1 md:p-4 md:px-8 md:text-2xl"
+						class="w-fit rounded-full bg-primary-1/5 p-4 px-6 text-lg font-[900] md:p-4 md:px-8 md:text-2xl"
 					>
 						Our Story
 					</p>
 
-					<p class="text-justify text-[1.18rem] leading-[2.4rem] tracking-[0.0225rem]">
-						Nok Animation studios was created to design and create exceptional immersive
-						visual experiences. We tell stories that are impactful and thought provoking. One
-						of the studios’ goals is to enable others do the same, be it in branding, game
-						development or other forms of media.
+					<p
+						class="text-justify text-[1.18rem] leading-[2.4rem] tracking-[0.0225rem]"
+					>
+						Nok Animation studios was created to design and create exceptional
+						immersive visual experiences. We tell stories that are impactful and
+						thought provoking. One of the studios’ goals is to enable others do
+						the same, be it in branding, game development or other forms of
+						media.
 					</p>
 				</div>
 			</div>
