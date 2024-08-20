@@ -9,13 +9,44 @@ import InfoGrid from "components/InfoGrid";
 ---
 
 <Layout title="NOK Animation and Studios">
-	<section
+	<!-- <section
 		class="w-full"
 		style={{
 			background: ` #F8FAFC url('/images/hero_bg.png') no-repeat fixed  center / cover`,
 		}}
 	>
 		<LandingPageHero client:load />
+	</section> -->
+
+	<!-- <section class="w-full relative">
+		<video
+			autoplay
+			loop
+			muted
+			poster="/images/video_poster.jpg"
+			class="w-full h-full absolute top-0 left-0 object-cover"
+		>
+			<source src="/videos/hero_bg.mp4" type="video/mp4" />
+		</video>
+		<div class="relative z-10 py-32">
+			<LandingPageHero client:load />
+		</div>
+	</section> -->
+	<section class="w-full relative">
+		<!-- Background Video -->
+		<video
+			class="absolute top-0 left-0 w-full h-full object-cover"
+			src="/vids/vid.mp4"
+			autoplay
+			loop
+			muted
+			playsinline></video>
+
+		<div class="absolute top-0 left-0 w-full h-full bg-black opacity-25"></div>
+
+		<div class="relative py-8 md:py-16">
+			<LandingPageHero client:load />
+		</div>
 	</section>
 
 	<section class="w-full scroll-mt-28 bg-primary-2" id="download">
@@ -47,8 +78,11 @@ import InfoGrid from "components/InfoGrid";
 					class="mb-5 flex flex-col items-center gap-4 transition-all duration-500 ease-in-out md:flex-row"
 				>
 					<Fade bottom client:load>
-						<p class="text-center text-base font-bold text-primary-1 md:text-xl xl:text-2xl">
-							We deliver top quality animations for your business, brand or personal use.
+						<p
+							class="text-center text-base font-bold text-primary-1 md:text-xl xl:text-2xl"
+						>
+							We deliver top quality animations for your business, brand or
+							personal use.
 						</p>
 					</Fade>
 				</div>

@@ -98,17 +98,17 @@ const InfoGrid = () => {
 								</div>
 							</motion.div>
 
-							<div className="absolute bottom-0 left-0 flex w-full flex-col gap-2 bg-black/70 p-6 text-white  xxl:gap-4">
-								<div className="flex gap-2 justify-center items-center">
+							<div className="absolute bottom-0 left-0 flex justify-center w-full items-center flex-col gap-2 bg-black/70 p-6 text-white  xxl:gap-4">
+								<div className="flex gap-1 justify-center items-center">
 									<h3 className="text-center text-2xl  font-semibold md:text-4xl ">
 										{item.heading}
 									</h3>
 									<ArrowRight className="w-6 h-6 " />
 								</div>
-								<h5 className="mt-5 text-[1rem]  leading-[130%] tracking-[0.02rem]  md:tracking-[0.0225rem]">
+								<h5 className="mb-4 text-[1rem] text-center  leading-[130%] tracking-[0.02rem]  md:tracking-[0.0225rem]">
 									{item.subHeading}
 								</h5>
-								<p className="text-[0.8rem]  leading-[130%] tracking-[0.02rem] md:tracking-[0.0225rem]">
+								<p className="text-[0.8rem] text-center max-w-[70%]   w-full leading-[130%] tracking-[0.02rem] md:tracking-[0.0225rem]">
 									{item.paragraph}
 								</p>
 							</div>
